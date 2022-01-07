@@ -7,6 +7,7 @@ import com.baomidou.dynamic.datasource.toolkit.DynamicDataSourceContextHolder;
 import com.pearadmin.pro.modules.sys.domain.SysDataSource;
 import com.pearadmin.pro.modules.sys.param.SysDataSourceRequest;
 import com.pearadmin.pro.modules.sys.service.SysDataSourceService;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;

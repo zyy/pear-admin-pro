@@ -13,7 +13,10 @@ spring:
   profiles:
     ## 状态
     active: dev
-
+  # 路 径 匹 配 机 制
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
   ## 邮件
   mail:
     ## 协议

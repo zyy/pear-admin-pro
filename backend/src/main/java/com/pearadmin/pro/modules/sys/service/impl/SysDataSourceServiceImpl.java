@@ -8,6 +8,7 @@ import com.pearadmin.pro.modules.sys.domain.SysDataSource;
 import com.pearadmin.pro.modules.sys.param.SysDataSourceRequest;
 import com.pearadmin.pro.modules.sys.repository.SysDataSourceRepository;
 import com.pearadmin.pro.modules.sys.service.SysDataSourceService;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import javax.annotation.Resource;
@@ -22,6 +23,7 @@ implements SysDataSourceService {
     @Resource
     private SysDataSourceRepository sysDataSourceRepository;
 
+    @Lazy
     @Resource
     private DataContext dataContext;
 

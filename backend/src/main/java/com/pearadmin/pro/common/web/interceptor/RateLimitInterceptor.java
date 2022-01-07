@@ -1,8 +1,8 @@
 package com.pearadmin.pro.common.web.interceptor;
 
-import com.pearadmin.pro.common.context.UserContext;
 import com.pearadmin.pro.common.tools.core.ServletUtil;
 import com.pearadmin.pro.common.web.interceptor.annotation.RateLimit;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;
@@ -12,12 +12,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 限 流 拦 截 器
+ *
+ * Author: 就 眠 仪 式
+ * CreateTime: 2020/10/23
+ * */
 @Component
 public class RateLimitInterceptor implements HandlerInterceptor {
 
-    @Resource
-    private UserContext userContext;
-
+    @Lazy
     @Resource
     private RedisTemplate<String, Long> redisTemplate;
 
@@ -31,8 +35,6 @@ public class RateLimitInterceptor implements HandlerInterceptor {
                 // 限流条件
                 int number = currentLimit.number();
                 long time = currentLimit.time();
-
-                System.out.println("限流时间:" + time);
 
                 // 开启限流
                 if (time > 0 && number > 0) {
