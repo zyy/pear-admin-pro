@@ -7,7 +7,7 @@ import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
+import springfox.documentation.oas.annotations.EnableOpenApi;
 import java.util.ArrayList;
 
 /**
@@ -17,7 +17,7 @@ import java.util.ArrayList;
  * CreateTime: 2021/04/01
  * */
 @Configuration
-@EnableSwagger2
+@EnableOpenApi
 public class SwaggerConfig  {
 
     private static final String BASE_PACKAGE = "com.pearadmin";
