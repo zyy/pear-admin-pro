@@ -10,7 +10,7 @@
      开 箱 即 用 的 Spring Boot 企 业 级 开 发 平 台
   </h4> 
 
-  [预览](http://pro.pearadmin.com)   |   [官 网](http://www.pearadmin.com/)   |   [交流](https://jq.qq.com/?_wv=1027&k=5OdSmve)   |   [社区](http://forum.pearadmin.com/)  
+  [官 网](http://www.pearadmin.com/)   |   [交流](https://jq.qq.com/?_wv=1027&k=5OdSmve)   |   [社区](http://forum.pearadmin.com/)   
 
 </div>
 
@@ -77,11 +77,9 @@
 - [x] 主题切换: 系统正常操作日志记录和查询；系统异常信息日志记录和查询。
 - [x] 租户模式:  多租户模式，分库的方式 物理隔离数据。
 - [x] 导入导出： 提供注解方式 Excel 导入与 Excel 导出。
-
-
-### 🎯 近期计划
-
-- [ ] 短信发送:  使用阿里云sms，腾讯云sms，支持拓展。
+- [x] 短信发送:  通过 阿里云 sms 向用户或其他终端直接发送文字或数字信息。
+- [x] 个人中心:  当前用户基础信息显示，修改，重置密码。
+- [x] 限制流量:  使用 @RateLimit 限制接口访问频次。
 
 
 ### 🔨 项目结构
@@ -145,10 +143,6 @@ Pear Admin Pro
 
 前端启动 - frontend
 
-NVM ：Node 版本管理
-
-NVM use 16.0.0 
-
 ```
 
 切换环境
@@ -198,6 +192,14 @@ mail.*
 
 👉接口文档：[查看](http://pro.pearadmin.com/swagger-ui.html)
 
+### 💬 相关文章
+
+[Pear Admin Pro 1.1.8 发布，周末双更，升级 Crud 表格，提供 Dictionary 组件](https://mp.weixin.qq.com/s/ENM86uYGba3XsPIQF6ArLw)
+
+[Pear Admin Pro 1.1.1 发布，巧用 MyBatis 拦截器，零侵入式多租户支持](https://mp.weixin.qq.com/s/ri1RE2_Edjls9xCp12-AIg)
+
+[Pear Admin Pro 1.1.0 发布，数据权限 "规则模式"，提供灵活的数据拦截](https://mp.weixin.qq.com/s/BYI48CY6yvaDDnSggeJXMg)
+
 ### 🍎 预览界面
 
 | 预览                 |                界面 |
@@ -222,6 +224,12 @@ mail.*
 - 👉 Spring Boot：[https://github.com/spring-projects/spring-boot](https://github.com/spring-projects/spring-boot)
 - 👉 MyBatis Plus：[https://gitee.com/baomidou/mybatis-plus](https://gitee.com/baomidou/mybatis-plus)
 
+### 💘 联系我们
+
+- 申请加入：[contact@pearadmin.com](mailto:contact@pearadmin.com)
+- 意见反馈：[contact@pearadmin.com](mailto:contact@pearadmin.com)
+- 社区交流：[➀ 682110771](https://qm.qq.com/cgi-bin/qm/qr?k=wguN0SYYFVTX9K-5Muf36E_J77bCzdDD&authKey=Ye5voDJGOphYUvypWJHOEyHoYBcgzk1l7djAS4fWcmls1jybLnYjwLrzwsS6Jdo3&group_code=682110771), [➁ 864581125](https://jq.qq.com/?_wv=1027&k=3K8GjF2G)
+
 ### 🍻 贡献代码
 
 <p style="padding:10px;"  width="90%">
@@ -233,7 +241,5 @@ mail.*
 </p>
 
 感谢每一位贡献代码的朋友。
-
-[![Giteye chart](https://chart.giteye.net/gitee/pear-admin/pear-admin-pro/3E4EEFDN.png)](https://giteye.net/chart/3E4EEFDN)
 
 如果对您有帮助，您可以点右上角 💘Star💘支持
