@@ -224,6 +224,12 @@ mail.*
 - 👉 Spring Boot：[https://github.com/spring-projects/spring-boot](https://github.com/spring-projects/spring-boot)
 - 👉 MyBatis Plus：[https://gitee.com/baomidou/mybatis-plus](https://gitee.com/baomidou/mybatis-plus)
 
+### 💘 联系我们
+
+- 申请加入：[contact@pearadmin.com](mailto:contact@pearadmin.com)
+- 意见反馈：[contact@pearadmin.com](mailto:contact@pearadmin.com)
+- 社区交流：[➀ 682110771](https://qm.qq.com/cgi-bin/qm/qr?k=wguN0SYYFVTX9K-5Muf36E_J77bCzdDD&authKey=Ye5voDJGOphYUvypWJHOEyHoYBcgzk1l7djAS4fWcmls1jybLnYjwLrzwsS6Jdo3&group_code=682110771), [➁ 864581125](https://jq.qq.com/?_wv=1027&k=3K8GjF2G)
+
 ### 🍻 贡献代码
 
 <p style="padding:10px;"  width="90%">
@@ -235,8 +241,6 @@ mail.*
 </p>
 
 感谢每一位贡献代码的朋友。
-
-[![Giteye chart](https://chart.giteye.net/gitee/pear-admin/pear-admin-pro/3E4EEFDN.png)](https://giteye.net/chart/3E4EEFDN)
 
 如果对您有帮助，您可以点右上角 💘Star💘支持
 
